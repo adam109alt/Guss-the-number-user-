@@ -7,7 +7,7 @@ def computer_gusse(x):# I will make the high is x
     feedback = '' # and this is meaning the feedback i will give it to the computer
     gusse = 0
     
-    while feedback != gusse:
+    while feedback != 'c':
         gusse = random.randint(low , high)
         feedback = input(f'Is {gusse} Too high (h) or too low (l) or correct (c)?? ')
         
@@ -17,8 +17,9 @@ def computer_gusse(x):# I will make the high is x
         elif feedback == 'l':
             low = gusse + 1
             
-        else:
-            print(f'Yay The computer gussed right the number was {gusse}')
-            break
+    
+    print(f'Yay The computer gussed right the number was {gusse}')
+            
     
 computer_gusse(10) 
+    
